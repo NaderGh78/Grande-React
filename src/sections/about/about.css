@@ -1,0 +1,59 @@
+.about {
+    padding-top: 70px;
+    overflow: hidden;
+}
+
+.about .about-content .container {
+    margin-top: 30px;
+}
+
+.about .about-content .container .card {
+    padding: 10px;
+}
+
+.about .about-content .container .card h5 {
+    transition: all .3s;
+}
+
+.about .about-content .container .card h5:hover,
+.about .about-content .container .card:hover h5 {
+    color: var(--light-rose);
+}
+
+.about .about-info {
+    background-color: var(--light-rose);
+}
+
+.about .about-info .container {
+    padding: 50px 0;
+    margin-top: 50px;
+    color: #fff;
+}
+
+.about .about-info .container .row>div div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.about .about-info .container svg {
+    font-size: 70px;
+}
+
+.about .about-info .container strong {
+    display: block;
+    margin-top: 15px;
+}
+
+/* =========================================== */
+/* =========================================== */
+/* ============ RESPONSIVE STYLES ============ */
+/* =========================================== */
+/* =========================================== */
+
+@media only screen and (max-width:769px) {
+    .about .about-info .container .row>div:last-child div {
+        margin-bottom: 0;
+    }
+}

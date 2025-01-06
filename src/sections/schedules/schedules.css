@@ -1,0 +1,199 @@
+/* event-accordion */
+.schedules .schedules-table {
+    padding: 70px 0;
+    background-color: var(--light-gray);
+}
+
+.schedules .schedules-table .tabs-links ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, .1);
+}
+
+.schedules .schedules-table .tabs-links ul li {
+    background-color: #fff;
+    border-bottom: 1px solid #dad7d7;
+    height: 80px;
+}
+
+.schedules .schedules-table .tabs-links ul li:first-child,
+.schedules .schedules-table .tabs-links ul li:last-child {
+    /* border-bottom: none; */
+}
+
+.schedules .schedules-table .tabs-links ul li div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding-left: 30px;
+    text-transform: capitalize;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.schedules .schedules-table .tabs-links ul li div:hover,
+.schedules .schedules-table .tabs-links ul li div.active-tab {
+    background-color: var(--light-rose);
+}
+
+.schedules .schedules-table .tabs-links ul li div.active-tab h6,
+.schedules .schedules-table .tabs-links ul li div.active-tab small {
+    color: #fff !important;
+}
+
+.schedules .schedules-table .tabs-links ul li div:hover h6,
+.schedules .schedules-table .tabs-links ul li div:hover small {
+    color: #fff !important;
+}
+
+.schedules .schedules-table .event-accordion.showAcc {
+    display: block;
+}
+
+.schedules .schedules-table .event-accordion {
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, .1);
+    display: none;
+    margin-bottom: 50px;
+    animation: fadeAccordion .3s;
+}
+
+/* .accordion-button */
+.schedules .schedules-table .event-accordion .accordion-header .accordion-button {
+    height: 100px !important;
+    padding-left: 20px;
+    background-color: #fff;
+    border-top: 1px solid #dee2e6 !important;
+    border-bottom: 1px solid #dee2e6 !important;
+}
+
+.schedules .schedules-table .event-accordion .accordion-item:first-child .accordion-button {
+    border-top: none !important;
+}
+
+@keyframes fadeAccordion {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.schedules .schedules-table .event-accordion .accordion-button {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    cursor: pointer;
+}
+
+.schedules .schedules-table .event-accordion .accordion-button .left {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.schedules .schedules-table .event-accordion .accordion-button .right span {
+    font-size: 15px;
+    color: #777;
+    font-weight: 600;
+}
+
+.schedules .schedules-table .event-accordion .accordion-body {
+    padding: 20px;
+}
+
+/* event-accordion ends */
+
+/* +++++++++++++++++++++++++ */
+
+.schedules .speaking {
+    margin-top: 50px;
+}
+
+.schedules .speaking .hidden-speaker {
+    display: none;
+}
+
+.schedules .speaking .container .row {
+    margin-top: 60px;
+}
+
+.schedules .speaking .container .card {
+    padding: 10px;
+    transition: all .3s;
+    overflow: hidden;
+    animation: fadeAccordion .3s;
+    cursor: pointer;
+}
+
+.schedules .speaking .container .card .card-body {
+    position: absolute;
+    bottom: 10px;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+.schedules .speaking .container .card .overlay {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    background-color: rgba(0, 0, 0, .2);
+    opacity: 0;
+    transition: all .3s;
+    overflow: hidden;
+}
+
+.schedules .speaking .container .card:hover .overlay {
+    opacity: 1;
+}
+
+.schedules .speaking .container .card .card-socials {
+    position: absolute;
+    top: -50px;
+    right: 15px;
+    transition: all .3s;
+    transition-delay: .1s;
+}
+
+.schedules .speaking .container .card .card-socials span {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    margin-left: 3px;
+    line-height: 30px;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    background-color: var(--light-rose);
+    border-radius: 4px;
+}
+
+.schedules .speaking .container .card:hover {
+    box-shadow: 0px 8px 11px 1px rgba(0, 0, 0, .3);
+}
+
+.schedules .speaking .container .card:hover .card-socials {
+    top: 10px;
+}
+
+/* =========================================== */
+/* =========================================== */
+/* ============ RESPONSIVE STYLES ============ */
+/* =========================================== */
+/* =========================================== */
+
+@media only screen and (max-width:769px) {
+    .schedules .schedules-table .tabs-links ul {
+        /* margin-bottom: 20px; */
+    }
+}

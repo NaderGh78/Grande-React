@@ -1,0 +1,20 @@
+  .sponsors {
+      padding: 70px 0;
+      background-color: var(--light-gray);
+  }
+
+  .sponsors .row>div div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 170px;
+      margin-bottom: 20px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      transition: all .3s;
+  }
+
+  .sponsors .row>div div:hover {
+      border-color: #fff;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, .2);
+  }

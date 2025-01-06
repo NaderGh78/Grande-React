@@ -1,0 +1,154 @@
+:root {
+  --rose: #f50057;
+  --light-rose: #e91e63;
+  --lighthoney: #fdcb6e;
+  --blue: #9b59b6;
+  --light-gray: #f3f4f3;
+}
+
+body {
+  position: relative;
+  font-family: arial, tahoma;
+  scroll-behavior: smooth;
+}
+
+.hide-scroll {
+  overflow: hidden;
+}
+
+/* general custom style start */
+
+.container {
+  max-width: 1140px !important;
+}
+
+a {
+  transition: all .3s;
+}
+
+a,
+a:hover {
+  text-decoration: none !important;
+}
+
+.myRedBtn {
+  text-decoration: none;
+  color: #fff;
+  padding: 12px 20px;
+  text-transform: capitalize;
+  font-size: 14px;
+  background-color: var(--rose);
+  border-radius: 4px;
+  border: 1px solid var(--rose);
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.myRedBtn:hover {
+  background-color: var(--light-rose);
+  text-decoration: none;
+  color: #fff;
+}
+
+.custom-heading {
+  position: relative;
+  margin-bottom: 35px;
+  font-size: 42px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.custom-heading::before,
+.custom-heading::after {
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 1px;
+  background-color: red;
+}
+
+.custom-heading::before {
+  left: 48%;
+  bottom: -11px;
+}
+
+.custom-heading::after {
+  left: 49%;
+  bottom: -16px;
+}
+
+/* general custom style end */
+
+#back-to-top {
+  position: fixed;
+  right: 25px;
+  bottom: 40px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  font-size: 25px;
+  background-color: var(--rose);
+  color: #fff;
+  text-align: center;
+  line-height: 37px;
+  transition: all .3s;
+  opacity: 0;
+  z-index: 8;
+  cursor: pointer;
+}
+
+.back-to-top:hover {
+  background-color: var(--light-rose);
+}
+
+/* ================== */
+
+#show-image-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .6);
+  opacity: 0;
+  z-index: -1;
+  transition: all .3s;
+
+}
+
+/* add show class name in order to open the overlay */
+#show-image-overlay.show {
+  opacity: 1;
+  z-index: 50;
+}
+
+/* add show class name in order to run the animation on image */
+#show-image-overlay img.show {
+  animation: scaleImag .2s;
+}
+
+@keyframes scaleImag {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+/* =========================================== */
+/* =========================================== */
+/* ============ RESPONSIVE STYLES ============ */
+/* =========================================== */
+/* =========================================== */
+
+@media only screen and (max-width:769px) {
+  body #show-image-overlay img {
+    width: 270px;
+  }
+}

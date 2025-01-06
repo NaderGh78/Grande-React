@@ -1,0 +1,69 @@
+ .choose-us .choose-us-content .container {
+     margin: 50px auto 0;
+ }
+
+ .choose-us .choose-us-content .container .row>div {
+     border: 1px solid #ddd;
+     padding: 20px;
+     transition: all .3s;
+ }
+
+ .choose-us .choose-us-content .container .row>div:hover {
+     background-color: #f3f3f3;
+ }
+
+ .choose-us .choose-us-content .container .row>div:hover svg {
+     color: var(--light-rose);
+ }
+
+ .choose-us .choose-us-content .container .row>div:nth-child(1),
+ .choose-us .choose-us-content .container .row>div:nth-child(3) {
+     border: none;
+ }
+
+ .choose-us .choose-us-content .container .row>div:nth-child(2) {
+     border-top: none;
+     border-bottom: none;
+ }
+
+ .choose-us .choose-us-content .container .row>div:nth-child(4) {
+     border-left: none;
+     border-bottom: none;
+     border-right: none;
+ }
+
+ .choose-us .choose-us-content .container .row>div:nth-child(5),
+ .choose-us .choose-us-content .container .row>div:nth-child(6) {
+     border-bottom: none;
+     border-right: none;
+ }
+
+ .choose-us .choose-us-content .container .row>div svg {
+     font-size: 45px;
+     transition: all .3s;
+ }
+
+ .choose-us .choose-us-content .container .row>div span {
+     display: block;
+     margin: 15px 0;
+     font-size: 22px;
+ }
+
+ .choose-us .choose-us-content .container .row>div p {
+     font-size: 14px;
+     line-height: 1.4;
+     color: #999;
+ }
+
+ /* =========================================== */
+ /* =========================================== */
+ /* ============ RESPONSIVE STYLES ============ */
+ /* =========================================== */
+ /* =========================================== */
+
+ @media only screen and (max-width:769px) {
+     .choose-us .choose-us-content .container .row>div {
+         border: none !important;
+         border-bottom: 1px solid #ddd !important;
+     }
+ }

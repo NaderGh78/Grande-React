@@ -1,0 +1,126 @@
+/* start style footer */
+footer {
+    margin-top: 100px;
+}
+
+footer .footer-main {
+    padding: 70px 0;
+    background-color: #222;
+}
+
+footer .footer-main p {
+    padding-right: 40px;
+    font-size: 14px;
+}
+
+footer .footer-main ul li a {
+    font-size: 12px;
+}
+
+footer .footer-main ul li a:hover {
+    color: var(--light-rose) !important;
+}
+
+footer .footer-main .recent-post-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+footer .footer-main .recent-post-info:last-child {
+    margin-bottom: 0;
+}
+
+footer .footer-main .recent-post-info img {
+    width: 70px;
+    align-self: baseline;
+}
+
+footer .footer-main .recent-post-info a {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 13px;
+    line-height: 1.2;
+    color: #fff;
+}
+
+footer .footer-main .recent-post-info h6 {
+    font-size: 12px;
+    line-height: 1;
+    color: #999;
+}
+
+footer .footer-main form {
+    width: 100%;
+    position: relative;
+    margin: 15px 0 21px 0;
+}
+
+footer .footer-main form input {
+    width: 80%;
+    border: 1px solid #fff;
+    border-radius: 0;
+    outline: none;
+    box-shadow: none;
+}
+
+footer .footer-main form input:focus {
+    border: 1px solid var(--light-rose);
+    box-shadow: none;
+}
+
+footer .footer-main form button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 3px;
+    bottom: 0;
+    width: 25%;
+    padding: 8px 0;
+    font-size: 22px;
+    background-color: var(--light-rose);
+    color: #fff;
+    border: 1px solid var(--light-rose);
+    border-left: none;
+    outline: none;
+    cursor: pointer;
+}
+
+footer .footer-main .follow-us a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+    font-size: 22px;
+    line-height: 35px;
+    text-align: center;
+    background-color: #fff;
+    color: #222;
+    border-radius: 4px;
+}
+
+footer .footer-copyright {
+    padding: 15px 0;
+    background-color: #0b0b0b;
+    color: #fff;
+    text-align: center;
+}
+
+/* =========================================== */
+/* =========================================== */
+/* ============ RESPONSIVE STYLES ============ */
+/* =========================================== */
+/* =========================================== */
+
+@media only screen and (max-width:769px) {
+    footer .footer-main {
+        padding: 30px 0;
+    }
+
+    footer .footer-main .recent-post-info:last-child {
+        margin-bottom: 25px;
+    }
+}

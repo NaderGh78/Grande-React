@@ -1,0 +1,300 @@
+.my-menu {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 15px 0;
+    transition: all .3s;
+    z-index: 20;
+}
+
+.sticky-menu {
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    box-shadow: 0 3px 6px 3px rgba(0, 0, 0, .1);
+}
+
+.my-menu.sticky-menu .nav-link {
+    color: #000 !important;
+}
+
+/* style the nav links */
+.my-menu .nav-link {
+    position: relative;
+    margin-left: 12px;
+    color: #fff !important;
+    text-transform: uppercase;
+}
+
+.my-menu .active-link,
+.my-menu .nav-link:hover,
+.my-menu.sticky-menu .active-link {
+    color: var(--light-rose) !important;
+    /* background-color: yellow; */
+}
+
+.my-menu .nav-link::before,
+.my-menu .active-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -10px;
+    width: 15px;
+    height: 2px;
+    background-color: var(--light-rose);
+    transform: scale3d(0, 1, 1);
+    transition: all .3s;
+}
+
+.my-menu .active-link::before {
+    transform: scale3d(1, 1, 1);
+}
+
+.my-menu .nav-link:hover:before {
+    transform: scale3d(1, 1, 1);
+}
+
+#header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* customize the slider */
+#header .carousel-indicators li {
+    width: 13px;
+    height: 13px;
+    margin-left: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#header .carousel-indicators li.active {
+    background-color: #fff;
+}
+
+#header .my-slider,
+#header .my-slider .carousel,
+#header .my-slider .carousel .carousel-inner,
+#header .my-slider .carousel .carousel-item,
+#header .my-slider .carousel .carousel-caption {
+    width: 100% !important;
+    height: 100vh !important;
+}
+
+#header .my-slider .carousel .one,
+#header .my-slider .carousel .two,
+#header .my-slider .carousel .carousel-item .three {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+/* we put the imgs as background image */
+#header .my-slider .carousel .one {
+    background-image: url('/public/assets/images/slider/slide1.jpg');
+}
+
+#header .my-slider .carousel .two {
+    background-image: url('/public/assets/images/slider/slide2.jpg');
+}
+
+#header .my-slider .carousel .three {
+    background-image: url('/public/assets/images/slider/slide3.jpg');
+}
+
+#header .my-slider .carousel .carousel-caption {
+    left: 0;
+    right: 0;
+    padding: 0;
+    top: 0;
+    /* in case we have an empty space at the bottom of image */
+}
+
+#header .my-slider .carousel .carousel-caption img {
+    height: 100% !important;
+    object-fit: cover !important;
+}
+
+#header .carousel-caption-content {
+    position: absolute;
+    width: 100%;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#header .carousel-caption-content p {
+    font-size: 20px;
+}
+
+#header .carousel-caption-content h2 {
+    font-size: 50px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+#header .carousel-caption-content .btn-flex {
+    margin-top: 30px;
+}
+
+#header .carousel-caption-content .btn-flex a {
+    text-decoration: none;
+    padding: 10px 25px;
+    color: #fff;
+    font-size: 17px;
+    text-transform: capitalize;
+    border-radius: 4px;
+    transition: all .3s;
+}
+
+#header .carousel-caption-content .btn-flex a:nth-child(2) {
+    margin-left: 10px;
+    border: 1px solid #fff;
+}
+
+#header .carousel-caption-content .btn-flex a:nth-child(2):hover {
+    background-color: rgba(255, 255, 255, .2);
+}
+
+/* style the slider */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: none !important;
+    position: absolute;
+    width: 45px !important;
+    height: 45px !important;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 24px;
+    color: #fff;
+    border: 2px solid #fff;
+    transition: .3s all;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    border-radius: 50%;
+}
+
+.carousel-control-prev-icon:after,
+.carousel-control-next-icon:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Center the icon */
+    font-size: 30px;
+    color: white;
+}
+
+.carousel-control-prev-icon:after {
+    content: "\f053";
+}
+
+.carousel-control-next-icon:after {
+    content: "\f054";
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 35px !important;
+    height: 35px !important;
+    top: 50% !important;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.carousel-control-prev {
+    left: 40px !important;
+}
+
+.carousel-control-next {
+    right: 40px !important;
+}
+
+#header:hover .carousel-control-prev-icon,
+#header:hover .carousel-control-next-icon {
+    opacity: 1
+}
+
+#header .carousel-indicators li {
+    text-indent: -9999px !important;
+}
+
+/* =========================================== */
+/* =========================================== */
+/* ============ RESPONSIVE STYLES ============ */
+/* =========================================== */
+/* =========================================== */
+
+@media only screen and (max-width:769px) {
+
+    #header .carousel-caption-content {
+        top: 72%;
+    }
+
+
+    #header .carousel-caption-content p {
+        font-size: 17px;
+    }
+
+    #header .carousel-caption-content h2 {
+        font-size: 25px;
+    }
+
+    .navbar-brand img {
+        width: 150px;
+    }
+
+    .my-menu {
+        background-color: #fff;
+    }
+
+    .my-menu .nav-link {
+        color: #222 !important;
+    }
+
+    .my-menu .nav-link::before,
+    .my-menu .active-link::before {
+        display: none !important;
+    }
+
+    .my-menu .active-link::before {
+        transform: scale3d(0, 0, 0) !important;
+    }
+
+}
+
+@media only screen and (min-width:769px) and (max-width: 991px) {
+
+    .navbar-brand img {
+        width: 150px;
+    }
+
+    .my-menu {
+        background-color: #fff;
+    }
+
+    .my-menu .nav-link {
+        color: #222 !important;
+    }
+
+    .my-menu .nav-link::before,
+    .my-menu .active-link::before {
+        display: none !important;
+    }
+
+    .my-menu .active-link::before {
+        transform: scale3d(0, 0, 0) !important;
+    }
+
+}

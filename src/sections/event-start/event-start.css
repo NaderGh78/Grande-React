@@ -1,0 +1,48 @@
+.event-start {
+    margin: 80px 0 130px 0;
+}
+
+.event-start h3 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.event-start .event-start-nbr {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 50px 0;
+}
+
+.event-start .event-start-nbr>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 120px;
+    height: 120px;
+    box-shadow: 1px 10px 20px rgba(0, 0, 0, .2);
+}
+
+.event-start .event-start-nbr>div strong {
+    font-size: 50px;
+    line-height: 1;
+}
+
+.event-start .event-start-nbr>div span {
+    display: block;
+}
+
+/* =========================================== */
+/* =========================================== */
+/* ============ RESPONSIVE STYLES ============ */
+/* =========================================== */
+/* =========================================== */
+
+@media only screen and (max-width:769px) {
+    .event-start .event-start-nbr>div {
+        width: 100px;
+        height: 100px;
+    }
+}
