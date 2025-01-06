@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Grande-React/static/css/main.accc377f.css",
+    "main.js": "/Grande-React/static/js/main.e17f8845.js",
+    "static/media/slide3.jpg": "/Grande-React/static/media/slide3.f7d2ab2f7804fefa04f4.jpg",
+    "static/media/slide2.jpg": "/Grande-React/static/media/slide2.a56bdc0141fc3c1d8166.jpg",
+    "static/media/slide1.jpg": "/Grande-React/static/media/slide1.2169a155fc8daebf4639.jpg",
+    "static/media/bg-pricing.jpg": "/Grande-React/static/media/bg-pricing.554231a844d258965303.jpg",
+    "index.html": "/Grande-React/index.html",
+    "main.accc377f.css.map": "/Grande-React/static/css/main.accc377f.css.map",
+    "main.e17f8845.js.map": "/Grande-React/static/js/main.e17f8845.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.accc377f.css",
+    "static/js/main.e17f8845.js"
+  ]
+}
